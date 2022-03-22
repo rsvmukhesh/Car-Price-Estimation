@@ -16,6 +16,4 @@ R2_score: 0.4655
 ![image](https://user-images.githubusercontent.com/91404171/159473024-e47f36a9-6255-4e59-8c20-a6b7ff426bd6.png)
 ![image](https://user-images.githubusercontent.com/91404171/159473108-282e63b4-b306-4e91-b396-ebe3e12bbd05.png)
 
-##### Using Tkinter
-![image](https://user-images.githubusercontent.com/91404171/159472693-2ecb607a-2b64-4fe9-8618-739124b21aff.png)
 
