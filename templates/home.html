@@ -1,0 +1,205 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Price Prediction</title>
+
+    <link href='https://fonts.googleapis.com/css?family=Audiowide' rel='stylesheet'>
+
+
+    <!-- BootStrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    
+    <!-- css -->
+    <link rel="stylesheet" href="/static/css/styles.css">
+
+
+</head>
+
+<body class=".bg-dark">
+
+    <!-- As a heading -->
+    <nav class="navbar" >
+        <h1 id="center">Car Price Prediction</h1>
+    </nav>
+
+    <br><br><br>
+
+
+    <div class="container">
+
+
+
+        <form action="\predict" method="post">
+
+
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Brand</h5>
+                            <!-- Departure -->
+                            <input type="text" name="Brand-Name" id="Name-of-brand" required="required">
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <br>
+                <br>
+                <div class="col-sm-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Year</h5>
+                            <!-- Arrival -->
+                            <input type="number" name="year" id="year" required="required">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <br>
+            <br>
+            <br>
+
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <!-- Source -->
+                            <h5 class="card-title">Number of KM's Driven</h5>
+                            <input type="number" name="driven" id="driven" required="required">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Fuel</h5>
+                            <!-- Destination -->
+                            <select name="fuel" id="fuel" required="required">
+                                <option value="4">Petrol</option>
+                                <option value="3">LPG</option>
+                                <option value="0">CNG</option>
+                                <option value="1">Diesel</option>
+                                <option value="2">Electric</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <br>
+            <br>
+            <br>
+
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Seller type</h5>
+                            <!-- Total Stops -->
+                            <select name="seller_type" required="required">
+                                <option value="0">Individual</option>
+                                <option value="1">Dealer</option>
+                                <option value="2">TrustMark Dealer</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <br>
+                <br>
+                <div class="col-sm-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Transmission</h5>
+                            <!-- Airline -->
+                            <select name="transmission" required="required">
+                                <option value="0">Automatic</option>
+                                <option value="1">Manual</option>
+                            </select>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <br>
+            <br>
+            <div id="center">
+                
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Owner</h5>
+                            <!-- Airline -->
+                                <input type="radio" id="html" name="owner" value="0">
+                                <label for="html">First Owner</label><br>
+                                <input type="radio" id="css" name="owner" value="2">
+                                <label for="css">Second Owner</label><br>
+                                <input type="radio" id="html" name="owner" value="4">
+                                <label for="html">Third Owner</label><br>
+                                <input type="radio" id="css" name="owner" value="3">
+                                <label for="css">Test Drive Car</label><br>
+                                <input type="radio" id="html" name="owner" value="1">
+                                <label for="html">Fourth & above Owner</label><br>
+                        </div>
+                    </div>
+                
+            </div>
+
+
+
+            <br>
+            <br>
+            <br>
+            <!-- Submit -->
+            <input type="submit" value="Predict" class="btn btn-dark">
+        </form>
+
+        <br>
+        <br>
+        
+
+        <br>
+        <br>
+        
+        <div class="card" id="back">
+            <h3 class = 'output'>{{ prediction_text }}</h3>
+        </div>
+        
+
+        <br>
+        <br>
+        
+
+        <br>
+        <br><br>
+        <br>
+        
+
+        <br>
+        <br>
+    </div>
+
+
+
+
+    <!-- JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
