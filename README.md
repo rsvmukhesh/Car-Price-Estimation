@@ -7,10 +7,11 @@ Car Price Estimation using Car Dheko Dataset
   * [Web Application](#Web Application)
 
 
-## Correlation Matrix (Before Data Integration)
+## Correlation Matrix 
+### (Before Data Preprocessing)
 ![image](https://user-images.githubusercontent.com/91404171/159440115-cb204edf-1bd2-489a-9cfa-0e779d9d8e94.png)
 
-## Correlation Matrix (After Data Preprocessing)
+### (After Data Preprocessing)
 ![image](https://user-images.githubusercontent.com/91404171/159444220-4fc8bbd9-125b-4ce9-8d2d-a8446c95ca63.png)
 
 ## Features
@@ -24,6 +25,6 @@ The Training Score: 0.53,
 R2_score: 0.4655
 
 ## Web Application
-##### Web Application:https://carpricereeestimator.herokuapp.com/
+##### Link:https://carpricereeestimator.herokuapp.com/
 ![WhatsApp Image 2022-03-22 at 18 52 49](https://user-images.githubusercontent.com/91404171/159499338-f4750882-3780-4b0c-bc91-74904de72c04.jpeg)
 ![WhatsApp Image 2022-03-22 at 18 53 48](https://user-images.githubusercontent.com/91404171/159499457-1cd6872e-1b88-40c5-8fa5-3a25e8880d0a.jpeg)
