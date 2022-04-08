@@ -1,17 +1,19 @@
 # Car-Price-Estimation Web Application
 Car Price Estimation using Car Dheko Dataset
 
+
+
 ## Table of Content
-  * [Correlation Matrix](#Correlation Matrix)
+  * Correlation Matrix
   * [Features](#Features)
-  * [Web Application](#Web Application)
+  * Web Application
 
 
 ## Correlation Matrix 
-### (Before Data Preprocessing)
+### Before Data Preprocessing
 ![image](https://user-images.githubusercontent.com/91404171/159440115-cb204edf-1bd2-489a-9cfa-0e779d9d8e94.png)
 
-### (After Data Preprocessing)
+### After Data Preprocessing
 ![image](https://user-images.githubusercontent.com/91404171/159444220-4fc8bbd9-125b-4ce9-8d2d-a8446c95ca63.png)
 
 ## Features
