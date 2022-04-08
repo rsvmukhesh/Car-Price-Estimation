@@ -4,7 +4,6 @@ Car Price Estimation using Car Dheko Dataset
 ## Table of Content
   * [Correlation Matrix](#Correlation Matrix)
   * [Features](#Features)
-  * [Local Setup](#local-setup)
   * [Web Application](#Web Application)
 
 
